@@ -1,1 +1,108 @@
-/* add css here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0;   */
+  /*  border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Jost";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 32px;
+  max-width: 475px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.row {
+  margin: 8px;
+}
+
+.termsDiv {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px 0;
+  margin: 32px 0;
+  text-align: center;
+}
+
+#errorMsgDiv {
+  background-color: #a52a2a;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 32px;
+  text-align: center;
+  display: none;
+}
+
+.errorBox {
+  border: solid 4px #a52a2a;
+}
+
+input {
+  border: solid 1px darkgray;
+  border-radius: 4px;
+}
+
+.clearBtn {
+  background-color: hsl(333deg, 100%, 44%);
+}
+
+.submit {
+  background-color: hsl(256deg, 100%, 44%);
+}
+
+button {
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 48px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row > input {
+  width: 240px;
+  height: 32px;
+}
+
+/* .row {
+  display: flex;
+  width: 100%;
+} */
+
+.row {
+  text-align: right;
+}
+
+.row > label {
+  font-weight: bold;
+  padding-right: 12px;
+}

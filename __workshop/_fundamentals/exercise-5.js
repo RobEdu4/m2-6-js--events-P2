@@ -94,7 +94,7 @@ const getData = (arr, key, val) => {
     });
   } else {
     arr.forEach((person) => {
-      if (person.title === val) newArray.push(person);
+      if (person[key] === val) newArray.push(person);
     });
   }
 
@@ -104,6 +104,7 @@ const getData = (arr, key, val) => {
 // 2. Do a console.log to verify your function.
 console.log(getData(staffMembers, "javascript", 5));
 console.log(getData(staffMembers, "title", "Web Developer II"));
+console.log(getData(staffMembers, "name", "Thor Odinson"));
 // 3. Run the test to validate: yarn test exercise-5
 
 module.exports = { getData, staffMembers };

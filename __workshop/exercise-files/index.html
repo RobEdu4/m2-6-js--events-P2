@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:500,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper" id="wrapper">
+      <h1>Signup Form</h1>
+
+      <form class="formClass" id="formId">
+        <div class="row">
+          <label for="fullNameI">Full name:</label>
+          <input required type="text" id="fullNameI" />
+        </div>
+        <div class="row">
+          <label for="streetAddressI">Street address</label>
+          <input required type="text" id="streetAddressI" />
+        </div>
+        <div class="row">
+          <label for="emailAddressI">Email address</label>
+          <input required type="email" id="emailAddressI" />
+        </div>
+        <div class="row">
+          <label for="phoneNumberI">Phone number</label>
+          <input id="phoneNumberI" required type="tel" />
+        </div>
+        <div class="row">
+          <label for="passwordI">Password</label>
+          <input id="passwordI" required type="password" />
+        </div>
+        <div class="row">
+          <label for="confirmPassI">Confirm Password</label>
+          <input id="confirmPassI" required type="password" />
+        </div>
+        <div class="termsDiv" id="termsDiv">
+          <input type="checkbox" id="terms" value="agree" />
+          <label for="terms">
+            I agree to the <a href="/">terms of service</a>.
+          </label>
+        </div>
+        <div class="errorMsgDiv" id="errorMsgDiv"><p id="errorMsgP"></p></div>
+        <footer>
+          <button class="clearBtn" id="clearBtn">Clear</button>
+          <button class="submit" type="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
